@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedi Besleyici Kontrol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kedi Besleyici</h1>
+        
+        <div class="card">
+            <h2>Manuel Besleme</h2>
+            <div class="control-group">
+                <label for="manual-feed-duration">Besleme Süresi (ms):</label>
+                <input type="number" id="manual-feed-duration" min="100" max="2000" value="500">
+                <button id="manual-feed-btn" class="primary-btn">Şimdi Besle</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Besleme Programı</h2>
+            <div id="feeding-schedules">
+                <!-- Besleme programları buraya JavaScript ile eklenecek -->
+            </div>
+            <button id="add-feeding-btn" class="secondary-btn">Yeni Besleme Ekle</button>
+            <button id="save-schedules-btn" class="primary-btn">Programları Kaydet</button>
+        </div>
+        
+        <div class="status-container">
+            <p id="status-message"></p>
+        </div>
+    </div>
+    
+    <!-- Besleme programı şablonu -->
+    <template id="feeding-template">
+        <div class="feeding-schedule">
+            <div class="schedule-header">
+                <h3>Besleme #<span class="feeding-number"></span></h3>
+                <div class="toggle-container">
+                    <label class="toggle">
+                        <input type="checkbox" class="feeding-enabled">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <label>Saat:</label>
+                <input type="number" class="feeding-hour" min="0" max="23" value="8">
+                <label>Dakika:</label>
+                <input type="number" class="feeding-minute" min="0" max="59" value="0">
+            </div>
+            <div class="control-group">
+                <label>Besleme Süresi (ms):</label>
+                <input type="number" class="feeding-duration" min="100" max="2000" value="500">
+                <button class="remove-feeding-btn danger-btn">Sil</button>
+            </div>
+        </div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
