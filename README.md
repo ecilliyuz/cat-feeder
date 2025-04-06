@@ -40,14 +40,7 @@ Bu proje, ESP8266 ve servo motor kullanarak ev yapımı bir kedi besleyici oluş
 ## Kod Yapısı
 
 - `cat_feeder.ino`: Ana Arduino kod dosyası
-- `data/`: Web arayüzü dosyaları
-  - `index.html`: Ana sayfa
-  - `script.js`: JavaScript dosyası
-  - `style.css`: CSS dosyası
 
 ## Lisans
 
 MIT # cat-feeder
-# cat-feeder
-# cat-feeder
-# cat-feeder
