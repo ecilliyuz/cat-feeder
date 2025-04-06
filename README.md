@@ -24,8 +24,8 @@ Bu proje, ESP8266 ve servo motor kullanarak ev yapımı bir kedi besleyici oluş
 1. Arduino IDE'yi kurun
 2. Gerekli kütüphaneleri yükleyin (ESP8266WebServer, ArduinoJson, NTPClient, Servo)
 3. Devre bağlantılarını yapın:
-   - Servo sinyal pini -> D4 (GPIO2)
-   - Servo VCC -> 5V
+   - Servo sinyal pini -> D1
+   - Servo VCC -> 3.3V
    - Servo GND -> GND
 4. Kodu ESP8266'ya yükleyin
 5. Web tarayıcısından ESP8266'nın IP adresine bağlanın
