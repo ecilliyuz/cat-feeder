@@ -7,8 +7,8 @@
 #include <FS.h>
 
 // WiFi bilgileri
-const char* ssid = "cilliyuz's";  // WiFi adınızı girin
-const char* password = "ZcAzmRuZ!DxSN3Cq";  // WiFi şifrenizi girin
+const char* ssid = "";  // WiFi adınızı girin
+const char* password = "";  // WiFi şifrenizi girin
 
 // Web sunucu port
 ESP8266WebServer server(80);
